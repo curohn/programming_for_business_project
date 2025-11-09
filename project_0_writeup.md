@@ -78,3 +78,4 @@ Evaluating Improvement:
 We will compare the model’s performance against Zillow’s previous pricing methods (if available) to quantify improvements in prediction accuracy and user behavior. Reductions in RMSE and MAE will indicate technical success, while upward trends in engagement and conversion KPIs will demonstrate tangible business value.
 
 
+We here at Zillow host the most popular real estate platform in the world. Our platform allows our users to view, explore, and purchase homes in every market in the United States. We would like to create a prediction engine that attempts to price real estate based on a number of features. This would benefit our users by allowing them to get an estimate on price for each home they view, as well as price shop. This would benefit the organization by making our users happier, and more likely to come back to us here at Zillow. 
