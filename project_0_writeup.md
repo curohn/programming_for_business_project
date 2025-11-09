@@ -3,3 +3,7 @@ significance of this problem to the organization/society/people? What are the go
 organization wants to achieve with your solution?
 
 We here at Zillow host a very popular
+
+
+2. Explain your solution and why your proposed solution should solve the problem. What
+kind of value your solution will bring to the organization, society, or lives of the people?
