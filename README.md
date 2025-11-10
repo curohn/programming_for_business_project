@@ -9,6 +9,5 @@ https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset
 ## TODO:
 ### Project 0 Writeup
 - [x] John #1, 4, 7 (Drafts done)
-- [ ] John #1, 4, 7
 - [ ] Diana #2, 5, 8
 - [ ] Carson #3, 6, 9
