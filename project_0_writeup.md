@@ -7,7 +7,7 @@ Currently at Zillow we use a mixture of techniques to help identify current mark
 e.g., data types, variables, labels, etc. What kind of preprocessing techniques will you apply
 and why?
 
-We would likely process the data in batches as we don't need the immediat value, but rather recent property values and relevant home conditions to help understand where the property would fall in terms of value for the area for the current market. 
+We would likely process the data in batches as we don't need the immediate value, but rather recent property values and relevant home conditions to help understand where the property would fall in terms of value for the area for the current market. 
 
 Our data will revolve around property characteristics, location features, market data. categorical descriptors, and current market value. We will need to clean the data for any outliers or data with inaccurate, missing values, or outdated valuations.
 
