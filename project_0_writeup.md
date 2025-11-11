@@ -7,11 +7,11 @@ Currently at Zillow we use a mixture of techniques to help identify current mark
 e.g., data types, variables, labels, etc. What kind of preprocessing techniques will you apply
 and why?
 
-We would likely process the data in batches as we don't immediately need years upon years of data, but rather recent property values and relevant home conditions to help understand where the property would fall in terms of value for the area. 
+We would likely process the data in batches as we don't need the immediat value, but rather recent property values and relevant home conditions to help understand where the property would fall in terms of value for the area for the current market. 
 
-Our data will pull the following data t
+Our data will revolve around property characteristics, location features, market data. categorical descriptors, and current market value. We will need to clean the data for any outliers or data with inaccurate, missing values, or outdated valuations.
 
 9. How will the organization be expected to utilize your solution in their workflow? What is
 the capacity requirement for the company to utilize your solution?
 
-At Zillow we could use the database as a supplemental tool in our research when evaluating a property. Essentially we would use it as a baseline valuse adjusting for current market conditions and property conditions. 
+At Zillow we could use the database as a supplemental tool in our research when evaluating a property. Essentially we would use it as a baseline value adjusting for current market and property conditions. There is no real capacity requirements as we are delivering supplemental pricing data for our real estate agents. As long as we are able to feed current and past data into the model the only real restriction will be sever costs. maintenance and data entry. 
