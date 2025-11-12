@@ -1,20 +1,7 @@
-3. How does the organization currently work to solve the problem (if any)? How will your
-solution fit into their current process and help them improve the outcomes?
+1. Define and explain the problem. Why is this problem important to solve and what is the 
+significance of this problem to the organization/society/people? What are the goals that the 
+organization wants to achieve with your solution?
 
-Currently at Zillow we use a mixture of techniques to help identify current market conditions. We mostly focus on traditional apprasials, comparative market analyses, and public records & tax assessments to help determine the current value of a home. In tradtional appraisals we used a mixture of in person inspections, local sale comps and consider condition/upgrades to help account for the houses fair market value. Using comparative market analyses we would use recent sales, current listings, and expired listings combined with local knowlege to prepare a home and evaluation. If the other two methods failed to bring a clear valuation we would fall to tax assessments on the property and public sale records to find a property value. 
-
-6. How will you process your data, in real-time or in batches? Give an overview of the data,
-e.g., data types, variables, labels, etc. What kind of preprocessing techniques will you apply
-and why?
-
-We would likely process the data in batches as we don't need the immediate value, but rather recent property values and relevant home conditions to help understand where the property would fall in terms of value for the area for the current market. 
-
-Our data will revolve around property characteristics, location features, market data. categorical descriptors, and current market value. We will need to clean the data for any outliers or data with inaccurate, missing values, or outdated valuations.We may also group certain regions that notice pricing correlations to help better track trends over time. 
-
-9. How will the organization be expected to utilize your solution in their workflow? What is
-the capacity requirement for the company to utilize your solution?
-
-At Zillow we would use the database as a supplemental tool in our research when evaluating a property. Essentially we would use it as a baseline value adjusting for current market and property conditions. There is no real capacity requirements as we are delivering supplemental pricing data for our real estate agents. As long as we are able to feed current and past data into the model the only real restriction will be sever costs. maintenance and data entry. 
 - **The Problem:** Zillow hosts the most popular real estate platform in the world, allowing users to view, explore, and purchase homes across the United States. However, many properties lack accurate price estimates, making it difficult for users to determine fair market value and compare options effectively. We need to create a prediction engine that can automatically estimate home prices based on property features.
 
   **Why it's important:**
@@ -28,9 +15,13 @@ At Zillow we would use the database as a supplemental tool in our research when 
   3. Increase user engagement and satisfaction on the Zillow platform
   4. Help users make more informed real estate decisions 
 
+
 2. Explain your solution and why your proposed solution should solve the problem. What kind of value your solution will bring to the organization, society, or lives of the people? 
 
-3. How does the organization currently work to solve the problem (if any)? How will your solution fit into their current process and help them improve the outcomes? 
+3. How does the organization currently work to solve the problem (if any)? How will your
+solution fit into their current process and help them improve the outcomes?
+
+Currently at Zillow we use a mixture of techniques to help identify current market conditions. We mostly focus on traditional apprasials, comparative market analyses, and public records & tax assessments to help determine the current value of a home. In tradtional appraisals we used a mixture of in person inspections, local sale comps and consider condition/upgrades to help account for the houses fair market value. Using comparative market analyses we would use recent sales, current listings, and expired listings combined with local knowlege to prepare a home and evaluation. If the other two methods failed to bring a clear valuation we would fall to tax assessments on the property and public sale records to find a property value. 
 
 4. How will you acquire data? Will the organization provide, or will you find public data or will you need both? What will be the likely size of the data? 
 
@@ -58,7 +49,13 @@ At Zillow we would use the database as a supplemental tool in our research when 
 
 5. What  data  analytics  components  will  your  solution  include?  E.g.,  data acquisition/collection, data pre-processing, exploratory analysis, etc.  
 
-6. How will you process your data, in real-time or in batches? Give an overview of the data, e.g.,data types, variables, labels, etc. What kind of preprocessing techniques will you apply and why? 
+6. How will you process your data, in real-time or in batches? Give an overview of the data,
+e.g., data types, variables, labels, etc. What kind of preprocessing techniques will you apply
+and why?
+
+We would likely process the data in batches as we don't need the immediate value, but rather recent property values and relevant home conditions to help understand where the property would fall in terms of value for the area for the current market. 
+
+Our data will revolve around property characteristics, location features, market data. categorical descriptors, and current market value. We will need to clean the data for any outliers or data with inaccurate, missing values, or outdated valuations.We may also group certain regions that notice pricing correlations to help better track trends over time. 
 
 7. What predictive analytics solutions will you propose to address the problem and why this approach is a good solution?  
 
@@ -72,6 +69,21 @@ At Zillow we would use the database as a supplemental tool in our research when 
   
   **Industry standard:** Major real estate companies like Zillow and Redfin use similar regression-based approaches for their price estimate tools, proving this method works in the real world.
 
-1. What  will  be  your  evaluation  strategy?  What  metrics  will  you  use  to  evaluate  your predictive model and why? How will you evaluate the improvement that your solution provides to the outcomes of the organization? E.g., how KPI will change after your solution is integrated into a company’s ecosystem? 
+8. What  will  be  your  evaluation  strategy?  What  metrics  will  you  use  to  evaluate  your predictive model and why? How will you evaluate the improvement that your solution provides to the outcomes of the organization? E.g., how KPI will change after your solution is integrated into a company’s ecosystem? 
 
-2.  How will the organization be expected to utilize your solution in their workflow? What is the capacity requirement for the company to utilize your solution? 
+9. How will the organization be expected to utilize your solution in their workflow? What is
+the capacity requirement for the company to utilize your solution?
+
+At Zillow we would use the database as a supplemental tool in our research when evaluating a property. Essentially we would use it as a baseline value adjusting for current market and property conditions. There is no real capacity requirements as we are delivering supplemental pricing data for our real estate agents. As long as we are able to feed current and past data into the model the only real restriction will be sever costs. maintenance and data entry. 
+- **The Problem:** Zillow hosts the most popular real estate platform in the world, allowing users to view, explore, and purchase homes across the United States. However, many properties lack accurate price estimates, making it difficult for users to determine fair market value and compare options effectively. We need to create a prediction engine that can automatically estimate home prices based on property features.
+
+  **Why it's important:**
+  - **For Users:** Home buyers and sellers need reliable price estimates to make informed decisions. Without accurate predictions, users may overpay for homes or price their listings incorrectly, leading to financial losses and wasted time.
+  - **For Zillow:** Providing accurate price estimates increases user trust and engagement with the platform. Users who receive helpful pricing information are more likely to return to Zillow for future real estate needs, increasing market share and revenue.
+  - **For Society:** Better price transparency in real estate markets helps create fairer transactions and reduces information asymmetry between buyers and sellers.
+
+  **Goals:**
+  1. Build a prediction model that accurately estimates home prices based on features like bedrooms, bathrooms, lot size, and location
+  2. Provide instant price estimates for properties across all U.S. markets
+  3. Increase user engagement and satisfaction on the Zillow platform
+  4. Help users make more informed real estate decisions 
