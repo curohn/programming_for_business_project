@@ -1,1 +1,3 @@
 *.csv
+context.md
+.venv
