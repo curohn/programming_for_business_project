@@ -1,89 +1,83 @@
-1. Define and explain the problem. Why is this problem important to solve and what is the 
-significance of this problem to the organization/society/people? What are the goals that the 
-organization wants to achieve with your solution?
+Project 0
 
-- **The Problem:** Zillow hosts the most popular real estate platform in the world, allowing users to view, explore, and purchase homes across the United States. However, many properties lack accurate price estimates, making it difficult for users to determine fair market value and compare options effectively. We need to create a prediction engine that can automatically estimate home prices based on property features.
+Group
+Carson Johnston - cjohnston15@student.gsu.edu - Team Leader
+Diana Dickson - ldickson2@student.gsu.edu 
+John Curran - jcurran6@student.gsu.edu  
 
-  **Why it's important:**
-  - **For Users:** Home buyers and sellers need reliable price estimates to make informed decisions. Without accurate predictions, users may overpay for homes or price their listings incorrectly, leading to financial losses and wasted time.
-  - **For Zillow:** Providing accurate price estimates increases user trust and engagement with the platform. Users who receive helpful pricing information are more likely to return to Zillow for future real estate needs, increasing market share and revenue.
-  - **For Society:** Better price transparency in real estate markets helps create fairer transactions and reduces information asymmetry between buyers and sellers.
+“Statement of Academic Honesty:
+The following code represents our own work. We have neither received nor given inappropriate assistance. We have not copied or modified code from any source other than the course webpage or the course textbook. We recognize that any unauthorized assistance or plagiarism will be handled in accordance with Georgia State University's Academic Honesty Policy and the policies of this course. We recognize that our work is based on an assignment created by the Institute for Insight at Georgia State University. Any publishing or posting of source code for this project is strictly prohibited unless you have written consent from the Institute for Insight at Georgia State University.”
+The Problem
 
-  **Goals:**
-  1. Build a prediction model that accurately estimates home prices based on features like bedrooms, bathrooms, lot size, and location
-  2. Provide instant price estimates for properties across all U.S. markets
-  3. Increase user engagement and satisfaction on the Zillow platform
-  4. Help users make more informed real estate decisions 
+Zillow hosts the most popular real estate platform in the world, allowing users to view, explore, and purchase homes across the United States. Our platform makes buying, selling, and all real estate transactions easy. However, many properties lack accurate price estimates, making it difficult for users to determine fair market value and compare options effectively. We need to create a prediction engine that can automatically estimate home prices based on property features.
 
+	Identifying and solving this issue would allow the organization to provide a new offering to our customers. Whether they are buying, selling, or advising, they would be able to see reasonable price estimates for the real estate and compare it to others nearby, allowing them to make smarter decisions. 
 
-2. Explain your solution and why your proposed solution should solve the problem. What kind of value your solution will bring to the organization, society, or lives of the people? 
+For Zillow itself, this pricing model would add nuance and depth to our analytics internally. Analyses on macro economic trends, micro economic trends, and others would become possible and better informed. This data also could be provided to larger government and Non-governmental groups for large scale research, increasing the transparency in markets and creating fairer transactions for all. 
 
-3. How does the organization currently work to solve the problem (if any)? How will your
-solution fit into their current process and help them improve the outcomes?
+Goals
 
-Currently at Zillow we use a mixture of techniques to help identify current market conditions. We mostly focus on traditional apprasials, comparative market analyses, and public records & tax assessments to help determine the current value of a home. In tradtional appraisals we used a mixture of in person inspections, local sale comps and consider condition/upgrades to help account for the houses fair market value. Using comparative market analyses we would use recent sales, current listings, and expired listings combined with local knowlege to prepare a home and evaluation. If the other two methods failed to bring a clear valuation we would fall to tax assessments on the property and public sale records to find a property value. 
+Provide a prediction model that can predict a fair and reasonable price.
+Provide aggregated statistics for different locations, allowing comparisons between regions. 
+Provide a service that  increases user engagement and satisfaction with the platform. 
+Allow users to make more informed real estate decisions. As stated early, having knowledge of comparable real estate prices will allow these transactions to be fairer to all. 
 
-4. How will you acquire data? Will the organization provide, or will you find public data or will you need both? What will be the likely size of the data? 
+Future Solution
 
-- **Data Source:** We will use public data from the "USA Real Estate Dataset" hosted on Kaggle.com (https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset). This dataset provides real-world real estate transaction data from across the United States.
+Solving the dilemma of accurate pricing information is crucial for user satisfaction and confidence in real estate transactions. For either the buyer or the seller it allows for informed decision making when purchasing real estate allowing for both a fair and competitive price. For Zillow as an organization, improving price prediction strengthens user trust, enhances engagement, and sets it apart from competitors by leveraging advanced analytics and machine learning. On a societal level, the solution promotes transparency, fairness, and efficiency in housing markets, helping individuals make sound financial decisions in one of life’s most significant investments.
 
-  **Dataset Details:**
-  - Each record represents a single property sale in the United States
+Current Solution
+
+Currently Zillow uses a mixture of techniques to help identify current market conditions. Generally price estimates focus on traditional appraisals, comparative market analyses, and public records & tax assessments to help determine the current value of a home. In traditional appraisals a mixture of in person inspections, local sale comps and considering condition/upgrades are used to help account for the houses fair market value. Using comparative market analyses uses recent sales, current listings, and expired listings combined with local knowledge to prepare a home and evaluation. If the other two methods fail to bring a clear valuation, tax assessments on the property and public sale records to find a property value would be used although that data is generally outdated. 
+
+Data Acquisition
+
+We plan to use a public dataset gathered from Kaggle.com. The "USA Real Estate Dataset" provides real world prices of homes across the United States. It is available at: https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset
+
+This dataset contains one record for a single property sale in the United States. It also has numerous features. This is from 900,000+ property records.
   - Key features include:
-    - **Price** (target variable): Sale price of the property
-    - **Bedrooms**: Number of bedrooms
-    - **Bathrooms**: Number of bathrooms  
-    - **Lot size**: Property size in acres
-    - **Location data**: Street address, city, state, and zip code
-    - **Sale status**: Whether the property was sold, for sale, etc.
-  
-  **Dataset Size:** The dataset contains approximately 900,000+ property records, providing substantial data for training robust predictive models. The file size is approximately 171 MB.
+    - Price (target variable): Sale price of the property
+    - Bedrooms: Number of bedrooms
+    - Bathrooms: Number of bathrooms  
+    - Lot size: Property size in acres
+    - Location data: Street address, city, state, and zip code
+    - Sale status: Whether the property was sold, for sale, etc.
+Future augmentation can include additional information on demographics, property age, square footage and even market trends for the region.
 
-  **Future Augmentation:** As the project progresses, we may supplement this dataset with additional public data sources if needed, such as:
-  - Neighborhood demographic information (median income, school ratings)
-  - Property age or year built
-  - Square footage data
-  - Market trend data by region
-  
-  This approach allows us to start with a comprehensive foundation while maintaining flexibility to enhance the model's predictive power as needed. 
+Data Analytics Components 
 
-5. What  data  analytics  components  will  your  solution  include?  E.g.,  data acquisition/collection, data pre-processing, exploratory analysis, etc.  
+Our solution will include several key components of the data analytics process to ensure that the predictive model we develop for Zillow is accurate, interpretable, and ready for deployment. The dataset has been obtained externally so we will begin by assessing the variable to determine the influence on housing prices. Like any dataset we will need to clean the data by adjusting for missing data, duplicate and extreme outliers that cause inaccuracies in the pricing model. Once cleaned, we plan to use heatmaps, scatterplots, and boxplots to identify patterns and inform feature selections. These trends can be further dived into by adding  additional variables by calculating the price per a square foot or by adding regional median income to help identify more complex trends.
 
-6. How will you process your data, in real-time or in batches? Give an overview of the data,
-e.g., data types, variables, labels, etc. What kind of preprocessing techniques will you apply
-and why?
+We will train and test multiple machine learning models, such as Linear Regression, Random Forest, and XGBoost, to predict home prices. Model performance will be evaluated using metrics like Root Mean Squared Error (RMSE) and R² to determine accuracy and generalizability. Once the best model is selected, we will interpret the most influential features driving price predictions. The final model will be designed for integration into Zillow’s platform to provide users with dynamic, real-time price estimates.
 
-We would likely process the data in batches as we don't need the immediate value, but rather recent property values and relevant home conditions to help understand where the property would fall in terms of value for the area for the current market. 
+Data Processing 
 
-Our data will revolve around property characteristics, location features, market data. categorical descriptors, and current market value. We will need to clean the data for any outliers or data with inaccurate, missing values, or outdated valuations.We may also group certain regions that notice pricing correlations to help better track trends over time. 
+The data will need to be processed in batches as we don't need the immediate values, but rather help identify trends in the market place. Our data will revolve around property characteristics, location features, market data, categorical descriptors, and current market value. We will need to clean the data for any outliers or data with inaccurate, missing values, or outdated valuations.We may also group certain regions that notice pricing correlations to help better track trends over time. 
 
-7. What predictive analytics solutions will you propose to address the problem and why this approach is a good solution?  
+Predictive Analytics Solution
 
-- We propose using regression models to predict home prices based on features like number of bedrooms, bathrooms, lot size, and location. We will start with Linear Regression as our baseline model and then explore more advanced techniques like Random Forest to improve accuracy. This approach is a good solution because:
-  
-  **Right tool for the job:** Regression is designed for predicting continuous numerical values (like price), which is exactly what we need. Given features like "3 bedrooms, 2 bathrooms, 1500 sq ft" the model will output a predicted price.
-  
-  **Based on real patterns:** The model learns from thousands of actual home sales in our dataset to identify patterns - for example, that homes with more bedrooms typically cost more, or that location strongly affects price.
-  
-  **Easy to interpret:** Linear Regression allows us to see which features have the biggest impact on price, making it easy to explain predictions to Zillow's users and helping them understand what drives home values.
-  
-  **Industry standard:** Major real estate companies like Zillow and Redfin use similar regression-based approaches for their price estimate tools, proving this method works in the real world.
+We propose using regression models to predict home prices based on features like number of bedrooms, bathrooms, lot size, and location. We will start with Linear Regression as our baseline model and then explore more advanced techniques like Random Forest to improve accuracy. Regression is designed for predicting continuous numerical values (like price), which is exactly what we need. Given features like "3 bedrooms, 2 bathrooms, 1500 sq ft" the model will output a predicted price. This model will be based on real patterns, be easy to read and identify patterns in home sales and not to mention it is an industry standard to use a regression-based approach for price estimate tools.
+ 
+Evaluation Strategy 
 
-8. What  will  be  your  evaluation  strategy?  What  metrics  will  you  use  to  evaluate  your predictive model and why? How will you evaluate the improvement that your solution provides to the outcomes of the organization? E.g., how KPI will change after your solution is integrated into a company’s ecosystem? 
+Our evaluation strategy focuses on assessing both the technical accuracy of the predictive model and its business impact once implemented in Zillow’s platform. The evaluation will occur in two stages: model-level evaluation (quantitative performance metrics) and organizational-level evaluation (impact on key performance indicators).
 
-9. How will the organization be expected to utilize your solution in their workflow? What is
-the capacity requirement for the company to utilize your solution?
+Model Evaluation Metrics: To measure how well our model predicts housing prices, we will use the following metrics:
 
-At Zillow we would use the database as a supplemental tool in our research when evaluating a property. Essentially we would use it as a baseline value adjusting for current market and property conditions. There is no real capacity requirements as we are delivering supplemental pricing data for our real estate agents. As long as we are able to feed current and past data into the model the only real restriction will be sever costs. maintenance and data entry. 
-- **The Problem:** Zillow hosts the most popular real estate platform in the world, allowing users to view, explore, and purchase homes across the United States. However, many properties lack accurate price estimates, making it difficult for users to determine fair market value and compare options effectively. We need to create a prediction engine that can automatically estimate home prices based on property features.
+Root Mean Squared Error (RMSE): RMSE will assess the average magnitude of prediction errors, penalizing larger errors more heavily. This is critical for price prediction tasks where even small deviations can affect user trust.
+Mean Absolute Error (MAE): MAE will complement RMSE by providing a straightforward measure of average error in dollar terms, offering intuitive insight into how far off predictions are from actual prices.
+R² (Coefficient of Determination): R² will help evaluate how well the model explains variability in housing prices and determine its overall explanatory power. Using multiple metrics ensures a balanced view of performance, capturing both the precision and reliability of the model.
+Model Validation Approach: We will implement train-test splits and cross-validation to prevent overfitting and verify model generalization across different data subsets. Residual plots and error analysis will be performed to detect systematic biases in certain property types or price ranges.
+Organizational Impact Evaluation (Post-Integration): Once integrated into Zillow’s platform, the effectiveness of the predictive model will be evaluated based on business KPIs that reflect user engagement, satisfaction, and retention. Key performance indicators include:
+Increase in User Engagement: Measured through metrics such as time spent on property pages, the number of repeated visits, and interactions with pricing tools.
+User Trust and Accuracy Feedback: Tracking how closely model-generated price estimates align with final sale prices and user-reported satisfaction ratings.
+Conversion Rate Improvement: Monitoring whether accurate estimates lead to more users contacting agents, saving listings, or completing purchases.
+Brand Credibility: Improvement in user retention and growth in new users driven by enhanced pricing transparency.
 
-  **Why it's important:**
-  - **For Users:** Home buyers and sellers need reliable price estimates to make informed decisions. Without accurate predictions, users may overpay for homes or price their listings incorrectly, leading to financial losses and wasted time.
-  - **For Zillow:** Providing accurate price estimates increases user trust and engagement with the platform. Users who receive helpful pricing information are more likely to return to Zillow for future real estate needs, increasing market share and revenue.
-  - **For Society:** Better price transparency in real estate markets helps create fairer transactions and reduces information asymmetry between buyers and sellers.
+Evaluating Improvement: We will compare the model’s performance against Zillow’s previous pricing methods (if available) to quantify improvements in prediction accuracy and user behavior. Reductions in RMSE and MAE will indicate technical success, while upward trends in engagement and conversion KPIs will demonstrate tangible business value.
+We here at Zillow host the most popular real estate platform in the world. Our platform allows our users to view, explore, and purchase homes in every market in the United States. We would like to create a prediction engine that attempts to price real estate based on a number of features. This would benefit our users by allowing them to get an estimate on price for each home they view, as well as price shop. This would benefit the organization by making our users happier, and more likely to come back to us here at Zillow.
 
-  **Goals:**
-  1. Build a prediction model that accurately estimates home prices based on features like bedrooms, bathrooms, lot size, and location
-  2. Provide instant price estimates for properties across all U.S. markets
-  3. Increase user engagement and satisfaction on the Zillow platform
-  4. Help users make more informed real estate decisions 
+Utilization
+
+Zillow would use the model as a supplemental tool in their research when evaluating a property. It can be used as a baseline for property evaluation, allowing adjustments for the current market, property conditions and other desired features. This would let Zillow make more accurate and timely pricing decisions for properties. While at the same time bringing a potential competitive advantage compared to their peers. There are no real capacity requirements for this solution outside of collecting the data, entering it, server costs and general model maintenance to maintain model accuracy. 
+
